@@ -43,8 +43,6 @@ core:
 	rm -rf tmp/
 	unzip tmp.zip -d $(WEB_ROOT)
 	rm -f tmp.zip
-	rm -rf $(WEB_ROOT)/js/*
-	mkdir $(WEB_ROOT)/less
 
 node_modules:
 	npm install $(NODE_DEPENDENCIES)
