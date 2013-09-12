@@ -3,6 +3,6 @@
     "version": "0.0.1",
     "dependencies": {
         "jquery": null,
-        "bootstrap": null
+        "bootstrap": "2.3.2"
     }
 }
