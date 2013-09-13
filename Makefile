@@ -31,8 +31,9 @@ COFFEE_ROOT = $(WEB_ROOT)/coffee
 JS_ROOT = $(WEB_ROOT)/js
 
 
-build: core node_modules js_modules
-#css
+install: node_modules js_modules
+
+build: core install
 
 clean:
 	rm -rf website node_modules
