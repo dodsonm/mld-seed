@@ -12,8 +12,6 @@
 HTML5_BP_REPO = git@github.com:dodsonm/html5-boilerplate.git
 WEB_ROOT = $(CURDIR)/website
 
-NODE_DEPENDENCIES = coffee-script@1.6.1 less@1.3.3 supervisor@0.5.2 bower@1.2.6
-
 BOWERPM = $(CURDIR)/node_modules/.bin/bower
 SUPERVISOR = $(CURDIR)/node_modules/.bin/supervisor
 
@@ -46,7 +44,7 @@ core:
 	rm -f tmp.zip
 
 node_modules:
-	npm install $(NODE_DEPENDENCIES)
+	npm install
 
 js_modules:
 	$(BOWERPM) install;
